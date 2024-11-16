@@ -1,0 +1,12 @@
+{
+  "private": true,
+  "name": "cyber-garden-school-2024",
+  "packageManager": "yarn@4.5.1",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    ":": "yarn workspace"
+  }
+}
