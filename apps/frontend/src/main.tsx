@@ -6,6 +6,7 @@ import "@fontsource-variable/roboto-flex";
 
 import "./styles/theme.css";
 import "./styles/reset.css";
+import './main.sass'
 
 import { App } from "./app";
 
