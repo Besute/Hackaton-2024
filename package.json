@@ -8,8 +8,5 @@
   ],
   "scripts": {
     ":": "yarn workspace"
-  },
-  "dependencies": {
-    "classnames": "^2.5.1"
   }
 }
