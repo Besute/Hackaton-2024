@@ -3,7 +3,7 @@ import { Button } from "../button";
 import { BurgerMenu } from "../burger-menu";
 
 import "./_section-hello.sass";
-import img from "../../img/sectionHello.png";
+import img from "../../assets/images/sectionHello.png";
 
 const SectionHelloComponent = function SectionHello() {
   return (
