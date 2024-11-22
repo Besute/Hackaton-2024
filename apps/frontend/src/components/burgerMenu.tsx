@@ -26,6 +26,7 @@ const BurgerMenuComponent = function BurgerMenu() {
         <div className="menu-burger__level_9 menu-burger__level">9</div>
         <div className="menu-burger__level_10 menu-burger__level">10</div>
         <div className="menu-burger__level_11 menu-burger__level">11</div>
+        <div className="menu-burger__level_12 menu-burger__level">R</div>
       </div>
       <div className="menu-burger__foreground"></div>
     </div>
