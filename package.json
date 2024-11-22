@@ -7,6 +7,8 @@
     "packages/*"
   ],
   "scripts": {
-    ":": "yarn workspace"
+    ":": "yarn workspace",
+    ":frontend": "yarn : @cgs/frontend",
+    ":backend": "yarn : @cgs/backend"
   }
 }

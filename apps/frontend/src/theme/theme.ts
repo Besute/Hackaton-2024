@@ -18,11 +18,10 @@ const fontFamily = (...args: FontFamily): string => {
 const fontSource = (family: string) => [`${family}`, `${family} Variable`];
 
 export const { contract, theme } = createTheme({
-  color: {},
-  // color: {
-  //   variant: "tonalSpot",
-  //   sourceColor: "#00ff00",
-  // },
+  color: {
+    variant: "tonalSpot",
+    sourceColor: "#3aaa35",
+  },
   typeface: {
     plain: fontFamily(fontSource("Open Sans"), fontSource("Roboto Flex"), "Roboto",  "system-ui", "Arial", "sans-serif"),
     brand: fontFamily(fontSource("Roboto Flex"), fontSource("Manrope"), fontSource("Raleway"), "Helvetica", "sans-serif"),
