@@ -1,8 +1,15 @@
-import { memo } from "react";
+import { memo, type ReactNode } from "react";
 import clsx from "clsx";
-import './_button.sass'
+import "./_button.sass";
 
-const ButtonComponent = function Button({ color, text } : object) {
+export namespace Button {
+  export type Props = {
+    color: string;
+    text: ReactNode;
+  }
+}
+
+const ButtonComponent = function Button({ color, text } : Button.Props) {
   return (
     <div
       className={

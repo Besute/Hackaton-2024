@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "cyber-garden-school-2024",
+  "name": "@cgs/monorepo",
   "packageManager": "yarn@4.5.2",
   "workspaces": [
     "apps/*",
@@ -9,6 +9,12 @@
   "scripts": {
     ":": "yarn workspace",
     ":frontend": "yarn : @cgs/frontend",
-    ":backend": "yarn : @cgs/backend"
+    ":backend": "yarn : @cgs/backend",
+    "frontend:dev": "turbo dev --filter=@cgs/frontend...",
+    "frontend:build": "turbo build --filter=@cgs/frontend",
+    "frontend:preview": "turbo preview --filter=@cgs/frontend"
+  },
+  "devDependencies": {
+    "turbo": "^2.3.1"
   }
 }

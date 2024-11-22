@@ -1,7 +1,4 @@
-$onSurface: var(--star4-color-on-surface)
-$onSurfaceVariant: var(--star4-color-on-surface-variant)
-$surface: var(--star4-color-surface)
-@use "../sass/main.sass"
+@use "../../sass/star4"
 
 @font-face
   font-family: Jura
@@ -13,6 +10,9 @@ $surface: var(--star4-color-surface)
     width: 2.5rem
     height: 2.5rem
     background-color: $onSurface
+    min-width: 2rem
+    min-height: 1rem
+    background-color: star4.color(on-surface)
     border-radius: 50%
     color: white
     text-align: center
@@ -83,7 +83,7 @@ $surface: var(--star4-color-surface)
       position: fixed
       width: 15rem
       height: 40vh
-      background: $onSurfaceVariant
+      background: star4.color(on-surface-variant)
       border-radius: 5rem
       z-index: 99
       right: 0
@@ -99,7 +99,7 @@ $surface: var(--star4-color-surface)
       width: 50px
       height: 50px
       border-radius: 50%
-      background: $surface
+      background: star4.color(surface)
   &__button:checked ~ &__background
     opacity: 1
     transform: translateX(0)

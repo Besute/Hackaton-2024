@@ -1,6 +1,6 @@
 import { memo } from "react";
 
-import "./_burgerMenu.sass";
+import "./_burger-menu.sass";
 
 const BurgerMenuComponent = function BurgerMenu() {
   return (
