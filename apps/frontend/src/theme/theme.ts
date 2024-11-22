@@ -19,7 +19,7 @@ const fontSource = (family: string) => [`${family}`, `${family} Variable`];
 
 export const { contract, theme } = createTheme({
   color: {
-    variant: "tonalSpot",
+    variant: "content",
     sourceColor: "#3aaa35",
   },
   typeface: {
