@@ -1,5 +1,6 @@
 import { StrictMode } from "react"
 import { createRoot } from "react-dom/client";
+import {App} from "./app"
 
 import "@fontsource-variable/open-sans";
 import "@fontsource-variable/roboto-flex";
@@ -27,5 +28,6 @@ createRoot(
 ).render(
   <StrictMode>
     <RouterProvider router={router} />
+    <App />
   </StrictMode>,
 )
