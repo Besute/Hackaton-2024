@@ -1,3 +1,7 @@
+$onSurface: var(--star4-color-on-surface)
+$onSurfaceVariant: var(--star4-color-on-surface-variant)
+$surface: var(--star4-color-surface)
+
 .menu-burger
   &__icon
       width: 25px
@@ -27,10 +31,11 @@
       position: fixed
       width: 15rem
       height: 40vh
-      background: gray
+      background: $onSurfaceVariant
+      border-radius: 5rem
       z-index: 99
-      right: 0
-      top: 6%
+      right: -5%
+      top: 10%
       transform: translateX(1000px)
       transition: all .2s
   &__button
@@ -42,7 +47,7 @@
       width: 50px
       height: 50px
       border-radius: 50%
-      background: white
+      background: $surface
   &__button:checked ~ &__background
     opacity: 1
     transform: translateX(0)
