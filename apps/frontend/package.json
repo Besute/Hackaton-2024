@@ -2,6 +2,7 @@
   "private": true,
   "name": "@cgs/frontend",
   "type": "module",
+  "packageManager": "yarn@4.5.2",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
