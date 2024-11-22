@@ -1,8 +1,55 @@
 $onSurface: var(--star4-color-on-surface)
 $onSurfaceVariant: var(--star4-color-on-surface-variant)
 $surface: var(--star4-color-surface)
+@use "../sass/main.sass"
+
+@font-face
+  font-family: Jura
+  src: url("../fonts/Jura.ttf")
+
 
 .menu-burger
+  &__level
+    min-width: 2rem
+    min-height: 1rem
+    background-color: $onSurface
+    border-radius: 50%
+    color: white
+    text-align: center
+    font-family: Jura
+    &_1
+      grid-column: 2/3
+      grid-row: 2/3
+    &_2
+      grid-column: 3/4
+      grid-row: 2/3
+    &_3
+      grid-column: 4/5
+      grid-row: 2/3
+    &_4
+      grid-column: 2/3
+      grid-row: 4/5
+    &_5
+      grid-column: 3/4
+      grid-row: 4/5
+    &_6
+      grid-column: 4/5
+      grid-row: 4/5
+    &_7
+      grid-column: 2/3
+      grid-row: 6/7
+    &_8
+      grid-column: 3/4
+      grid-row: 6/7
+    &_9
+      grid-column: 4/5
+      grid-row: 6/7
+    &_10
+      grid-column: 2/3
+      grid-row: 8/9
+    &_11
+      grid-column: 3/4
+      grid-row: 8/9
   &__icon
       width: 25px
       height: 2px
@@ -26,15 +73,17 @@ $surface: var(--star4-color-surface)
       &::before
           transform: translateY(-350%)
   &__background
+      display: grid
+      grid-template-rows: repeat(10, minmax(1rem, 1fr))
+      grid-template-columns: repeat(5, minmax(1rem, 1fr))
       opacity: 0
-      display: block
       position: fixed
       width: 15rem
       height: 40vh
       background: $onSurfaceVariant
       border-radius: 5rem
       z-index: 99
-      right: -5%
+      right: 0
       top: 10%
       transform: translateX(1000px)
       transition: all .2s
