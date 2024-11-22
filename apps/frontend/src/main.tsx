@@ -6,8 +6,8 @@ import "@fontsource-variable/roboto-flex";
 import "@fontsource-variable/material-symbols-outlined";
 
 import "./styles/theme.css";
-import "./styles/reset.css";
-import "./styles/lenis.css";
+import "./styles/reset.sass";
+import "./styles/lenis.sass";
 
 import { createRouter, RouterProvider } from "@tanstack/react-router";
 
